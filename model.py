@@ -7,19 +7,19 @@ df = pd.read_csv('university_data.csv')
 ## Our input variables....
 Target_School = 'Virginia Commonwealth University School of Dentistry'
 
-NBDE_1
-NBDE_2
-ADAT
-TOEFL_Min
-Home_Edu
-USA_Edu
-USA_Assistantship
-USA_Shadowing
-USA_Conferences
-USA_Research
-Home_Assistantship
-Home_Shadowing
-GPA
+NBDE_1 = 1
+NBDE_2 = 1
+ADAT = 'Yes'
+TOEFL_Min = 120
+Home_Edu = 'MDS'
+USA_Edu = 'Residency'
+USA_Assistantship = '>200 hours'
+USA_Shadowing = '>200 hours'
+USA_Conferences = 'Presented'
+USA_Research = 'Systematic review'
+Home_Assistantship = '>200 hours'
+Home_Shadowing = '>200 hours'
+GPA = 9.9
 
 
 ## Slicing required information from the dataset....
@@ -42,8 +42,8 @@ Contribution_of_USA_Assistantship = 0.125
 Contribution_of_USA_Shadowing = 0.125
 Contribution_of_USA_Conferences = 0.1
 Contribution_of_USA_Research = 0.1
-Contribution_of_Home_Assistantship = 0.75
-Contribution_of_Home_Shadowing = 0.75
+Contribution_of_Home_Assistantship = 0.075
+Contribution_of_Home_Shadowing = 0.075
 
 y = (Contribution_of_NBDE_1*1 + Contribution_of_NBDE_2*1 + Contribution_of_ADAT*3 + Contribution_of_TOEFL_Min*5 + 
      Contribution_of_Home_Edu*5 + Contribution_of_USA_Edu*5 + Contribution_of_USA_Assistantship*5 + 
@@ -93,7 +93,7 @@ if uni_data['TOEFL_Min'].values.isnull() == False:
     if TOEFL < uni_data['TOEFL_Min'].values:
     flag = 1
 
-elif TOEFL == 120:
+if TOEFL == 120:
     x = x + 0.1*5
 elif TOEFL >= 110:
     x = x + 0.1*4
