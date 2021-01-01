@@ -191,7 +191,7 @@ input[type=text], select {
 	padding: 20px;
 	background: linear-gradient(to left, #000, #333 50%, #eee 75%, #333 75%);
 	background-size: 500% 500%;
-	animation: change-gradient 5s ease-in-out infinite;
+	animation: change-gradient 15s ease-in-out infinite;
 }
 
 .footer-description{
