@@ -51,8 +51,8 @@ def predict():
         Contribution_of_USA_Shadowing = 0.125
         Contribution_of_USA_Conferences = 0.1
         Contribution_of_USA_Research = 0.1
-        Contribution_of_Home_Assistantship = 0.75
-        Contribution_of_Home_Shadowing = 0.75
+        Contribution_of_Home_Assistantship = 0.075
+        Contribution_of_Home_Shadowing = 0.075
         
         y = (Contribution_of_NBDE_1*1 + Contribution_of_NBDE_2*1 + Contribution_of_ADAT*3 + Contribution_of_TOEFL_Min*5 + 
              Contribution_of_Home_Edu*5 + Contribution_of_USA_Edu*5 + Contribution_of_USA_Assistantship*5 + 
@@ -102,7 +102,7 @@ def predict():
             if TOEFL_Min < uni_data['TOEFL_Min'].values:
                 flag = 1
         
-        elif TOEFL_Min == 120:
+        if TOEFL_Min == 120:
             x = x + 0.1*5
         elif TOEFL_Min >= 110:
             x = x + 0.1*4
