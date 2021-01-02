@@ -4,7 +4,7 @@
 
 ![dental-title](https://user-images.githubusercontent.com/72686156/103458006-f5eed500-4d29-11eb-8ea5-566a10b9e613.jpg)
 
-<p><h3>A USA Dental Admission Predicting web application. The application is built on gathered data from different dental practitioners of USA. It makes use of simple statistics to predict Student’s chances of admit in top dental schools of USA. This application was developed for a US-based startup - ‘CAAPID Simplified’. This was my project as Data Analyst Intern with the startup.</h3></p>
+<p><h3>A USA Dental Admission Predicting web application. The application is built on gathered data from different dental practitioners of USA. It makes use of simple statistics to predict Student’s chances of admit in top dental schools of USA.<br><br> This application was developed for a US-based startup - ‘CAAPID Simplified’. This was my project as Data Analyst Intern with the startup.</h3></p>
 
 <hr>
 <p><h3>A glimpse of the Web App:</h3></p>
