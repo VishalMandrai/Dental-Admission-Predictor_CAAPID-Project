@@ -12,7 +12,7 @@ body{
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	background: #ff7b54d9;
+	background: #dbf6e9;
 }
 
 /*------------------------------------------------------------------------------------*/
@@ -23,7 +23,7 @@ body{
 .container{
     padding: 18px;
 	position: relative;
-	background: linear-gradient(0.25turn, #222831, #222831, #000000);
+	background: linear-gradient(0.25turn, #00587a, #222831, #00587a);
 	background-size: 500% 500%;
 	animation: change-gradient 4s ease-in-out infinite;
 }
@@ -188,7 +188,7 @@ input[type=text], select {
 .footer{
 	flex-shrink: 0;
 	position: relative;
-	padding: 20px;
+	padding: 10px;
 	background: linear-gradient(to left, #000, #333 50%, #eee 75%, #333 75%);
 	background-size: 500% 500%;
 	animation: change-gradient 15s ease-in-out infinite;
@@ -197,5 +197,5 @@ input[type=text], select {
 .footer-description{
 	color: #ffffff;
 	margin: 0;
-	font-size: 18px;
+	font-size: 15px;
 }
